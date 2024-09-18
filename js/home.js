@@ -16,6 +16,6 @@ document
 
       document.getElementById("card-balance").innerText = newBalance;
     } else {
-      alert("Wrong Information");
+      alert("Failed to Add Money, Plz Try Again");
     }
   });
