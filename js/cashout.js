@@ -16,6 +16,10 @@ document
       );
       const updateBalance = accoutCardBalance - cashoutAmount;
       document.getElementById("card-balance").innerText = updateBalance;
+
+      const p = document.createElement("p");
+      p.innerText = `Cash out: ${cashoutAmount}Tk   New Balance: ${updateBalance}`;
+      document.getElementById("transaction-container").append(p);
     } else {
       alert("Failed to Cash Out, Plz Try Again");
     }

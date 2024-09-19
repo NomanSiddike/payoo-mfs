@@ -15,6 +15,10 @@ document
       let newBalance = Number(cardBalance + inputAddAmount);
 
       document.getElementById("card-balance").innerText = newBalance;
+
+      const p = document.createElement("p");
+      p.innerText = `Cash in: ${inputAddAmount}Tk   New Balance: ${newBalance}`;
+      document.getElementById("transaction-container").append(p);
     } else {
       alert("Failed to Add Money, Plz Try Again");
     }
